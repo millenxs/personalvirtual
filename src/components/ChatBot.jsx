@@ -5,7 +5,7 @@ const ChatBot = () => {
   const [messages, setMessages] = useState([
     {
       sender: "bot",
-      text: "Olá! Sou seu assistente de dieta saudável. Me diga o que você tem na geladeira e eu vou te ajudar a planejar uma refeição saudável com base nesses ingredientes! Posso sugerir receitas, ajustar porções e oferecer dicas de substituições saudáveis. Se precisar, também posso te ajudar a montar uma lista de compras para completar sua refeição. O que você tem aí hoje? 😊",
+	  text: "Olá! Sou seu personal virtual. Estou aqui para te ajudar a planejar suas atividades físicas, definir metas e acompanhar seu progresso. Posso sugerir treinos, ajudar com dicas de motivação e até ajustar seu plano de exercícios conforme suas necessidades. Me diga o que você gostaria de focar hoje, e vamos juntos alcançar seus objetivos! 💪😊",
     },
   ]);
   const [input, setInput] = useState("");
@@ -58,7 +58,13 @@ const ChatBot = () => {
           <div className="title text-white">Personal Virtual</div>
           <h2 className="text-white text-sm">@seupersonal </h2>
           <figure className="avatar">
-            <img src="/" width="50" height="50" className="rounded-full" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+              className="w-12 h-12 text-white"
+            >
+              <path d="M96 64c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 160 0 64 0 160c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-64-32 0c-17.7 0-32-14.3-32-32l0-64c-17.7 0-32-14.3-32-32s14.3-32 32-32l0-64c0-17.7 14.3-32 32-32l32 0 0-64zm448 0l0 64 32 0c17.7 0 32 14.3 32 32l0 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 64c0 17.7-14.3 32-32 32l-32 0 0 64c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-160 0-64 0-160c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32zM416 224l0 64-192 0 0-64 192 0z" />
+            </svg>
           </figure>
         </div>
 
